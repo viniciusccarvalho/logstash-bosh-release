@@ -1,0 +1,11 @@
+# abort script on any command that exits with a non zero value
+set -e
+
+   echo "Extracting logstash"
+   pwd
+   tar -zxvf logstash/logstash-1.4.1.tar.gz
+   
+   ls -l
+
+   LOGSTASH_INSTALL_DIR=$(find . -type f -name 'logstash' | head -n1)
+   cp -a $LOGSTASH_INSTALL_DIR/* ${BOSH_INSTALL_TARGET}/logstash

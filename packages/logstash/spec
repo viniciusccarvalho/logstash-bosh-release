@@ -1,0 +1,7 @@
+---
+name: logstash
+
+dependencies:
+- jdk7
+files:
+- logstash/logstash-1.4.1.tar.gz

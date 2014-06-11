@@ -1,0 +1,7 @@
+---
+name: logstash
+templates:
+
+packages:
+- jdk7
+- logstash
